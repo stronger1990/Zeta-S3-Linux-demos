@@ -46,7 +46,7 @@ int MiniGUIMain(int argc, const char *argv[])
 	CreateInfo.ty = 0;
 	CreateInfo.rx = DEVICE_WIDTH;
 	CreateInfo.by = DEVICE_HEIGHT;
-	// 这里一定要透明才能看到摄像头画面，因为如果使用
+	// 这里一定要透明才能看到摄像头画面
 	CreateInfo.iBkColor = RGBA2Pixel(HDC_SCREEN, 0x00, 0x00, 0x00, 0x00);
 	CreateInfo.dwAddData = 0; // 通过这个传递参数，默认是0，也可以传递指针
 	CreateInfo.hHosting = HWND_DESKTOP;
